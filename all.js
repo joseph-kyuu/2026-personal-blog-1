@@ -85,15 +85,15 @@ let courseCardHTML = "";
 
 cardsData.forEach((item) => {
   courseCardHTML += `
-            <div class="col">
+            <li class="col list-unstyled">
               <div class="card box-shadow">
-              <img src="${item.image}" class="card-img-top" alt="${item.title}" title="${item.title}">
-              <div class="card-body ">
-                <h5 class="card-title text-center fw-bold">${item.title}</h5>
-                <p class="card-text text-justify">${item.content}</p>
+                <img src="${item.image}" class="card-img-top" alt="${item.title}" title="${item.title}">
+                <div class="card-body ">
+                  <h5 class="card-title text-center fw-bold">${item.title}</h5>
+                  <p class="card-text text-justify">${item.content}</p>
+                </div>
               </div>
-          </div>
-            </div>             
+            </li>             
   `;
 });
 
