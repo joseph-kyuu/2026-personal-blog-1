@@ -12,5 +12,197 @@
     />
     <link rel="stylesheet" href="all.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- header -->
+    <!-- 粉絲團、選單 -->
+    <header>
+      <!-- 粉絲團 -->
+      <div class="bg-light p-2 d-flex justify-content-end">
+        <div class="d-flex">
+          <!-- FB粉絲團 -->
+          <a
+            class="d-flex"
+            href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dzh_TW"
+            target="_blank"
+          >
+            <div class="d-flex justify-content-center align-items-center me-xs">
+              <img
+                src="./imges/facebookIcon.png"
+                alt="臉書粉絲團"
+                title="臉書粉絲團"
+              />
+            </div>
+            <span>粉絲團</span>
+          </a>
+          <!-- 裝飾垂直線 -->
+          <span class="border-start mx-2"></span>
+          <!-- Twitter粉絲團 -->
+          <a
+            class="d-flex text-lightblue"
+            href="https://x.com/"
+            target="_blank"
+          >
+            <div class="d-flex justify-content-center align-items-center me-xs">
+              <img
+                src="./imges/twitterIcon.png"
+                alt="twitter粉絲團"
+                title="twitter粉絲團"
+              />
+            </div>
+            <span>追隨我們</span>
+          </a>
+        </div>
+      </div>
+      <!-- 品牌標、選單 -->
+      <nav class="d-flex justify-content-between p-1">
+        <!-- 品牌標誌 -->
+        <div>
+          <a
+            href="https://www.hexschool.com/?utm_source=google&utm_medium=ads&utm_campaign=2025google-React-blog&gad_source=1&gad_campaignid=21418025690&gbraid=0AAAAADcz4cnFZAbr9FOjTGecSKcofRwZO&gclid=CjwKCAjwtvvPBhBuEiwAPMijrx8BYoASdSK8rdlAfj8nx7T853K8uKSC2N5GxyqL2tk9qTyPhlmDgBoCSXYQAvD_BwE"
+            target="_blank"
+          >
+            <img
+              src="./imges/logo.png"
+              alt="六角品牌標誌"
+              title="六角品牌標誌"
+            />
+          </a>
+        </div>
+        <!-- 選單 -->
+        <ul class="d-flex align-items-center list-unstyled mb-0">
+          <li>
+            <a href="#" class="text-lightgreen p-3 nav-btn active">首頁</a>
+          </li>
+          <li>
+            <a href="#" class="text-lightgreen p-3 nav-btn">產品介紹 </a>
+          </li>
+          <li>
+            <a href="#" class="text-lightgreen p-3 nav-btn">聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 主要內容 -->
+    <main>
+      <!-- hero -->
+      <section class="hero-bg py-6">
+        <div class="slogan-bg p-5">
+          <h1 class="text-white fw-bold mb-0">
+            六角學院<br />讓您奠定良好的前端基礎
+          </h1>
+        </div>
+      </section>
+      <!-- 課程卡片、差異表格 -->
+      <div class="container py-5">
+        <!-- 課程卡片 -->
+        <section class="mb-5">
+          <div class="courseCard row"></div>
+        </section>
+        <!-- 差異表格 -->
+        <section>
+          <div>
+            <h2 class="text-center fw-bold">線上及實體課程的差異</h2>
+          </div>
+          <div>
+            <table class="table">
+              <thead>
+                <tr class="table-light fw-bold">
+                  <th scope="col">項目</th>
+                  <th scope="col">Hex School 線上課程</th>
+                  <th scope="col">一般線上課程</th>
+                  <th scope="col">實體課程</th>
+                </tr>
+              </thead>
+              <tbody class="courseTable"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+      <!-- 表單 -->
+      <section class="form-bg py-4">
+        <!-- 標題 -->
+        <div>
+          <h2 class="text-center fw-bold text-white mb-4">
+            對我們課程有興趣嗎?<br />歡迎留下您的資料
+          </h2>
+        </div>
+        <!-- 控制項 -->
+        <div class="container">
+          <div class="row">
+            <!-- 左側多行文字輸入框 -->
+            <div class="col">
+              <div>
+                <textarea
+                  class="form-control"
+                  rows="12"
+                  placeholder="請輸入您的疑問..."
+                  maxlength="200"
+                ></textarea>
+              </div>
+            </div>
+            <!-- 右側單行文字輸入框、提交按鈕 -->
+            <div class="col">
+              <div class="mb-3">
+                <label for="name" class="form-label">姓名</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  value="六角講師"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="tel" class="form-label">電話</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="tel"
+                  value="0912345678"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="mail" class="form-label">信箱</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="mail"
+                  value="hexschool@gmail.com"
+                />
+              </div>
+              <div class="text-end">
+                <button type="submit" class="btn lightgreen-bg text-white px-4">
+                  送出
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <!-- 聯絡資訊 -->
+    <footer class="p-3 d-flex justify-content-between">
+      <div>
+        <a
+          href="https://www.hexschool.com/?utm_source=google&utm_medium=ads&utm_campaign=2025google-React-blog&gad_source=1&gad_campaignid=21418025690&gbraid=0AAAAADcz4cnFZAbr9FOjTGecSKcofRwZO&gclid=CjwKCAjwtvvPBhBuEiwAPMijrx8BYoASdSK8rdlAfj8nx7T853K8uKSC2N5GxyqL2tk9qTyPhlmDgBoCSXYQAvD_BwE"
+          target="_blank"
+        >
+          <img src="./imges/logo.png" alt="六角品牌標誌" title="六角品牌標誌" />
+        </a>
+      </div>
+      <address>
+        <p class="mb-0">
+          聯絡我們:<a class="text-danger" href="mailto:hexschool@gmail.com"
+            >hexschool@gmail.com</a
+          >
+        </p>
+        <p class="mb-0">
+          電話:<a class="text-danger" href="tel:0999123456">0999123456</a>
+        </p>
+      </address>
+    </footer>
+    <script src="./all.js"></script>
+  </body>
 </html>

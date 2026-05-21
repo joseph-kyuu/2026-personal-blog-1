@@ -20,3 +20,98 @@ img {
 *::after {
   box-sizing: border-box;
 }
+
+textarea {
+  resize: none;
+}
+
+label {
+  color: white;
+}
+
+/* font-size */
+.fs-7 {
+  font-size: 0.75rem;
+}
+.fs-8 {
+  font-size: 0.625rem;
+}
+
+/* text-align */
+.text-justify {
+  text-align: justify;
+}
+
+/* margin */
+.me-xs {
+  margin-right: 0.125rem;
+}
+
+/* padding */
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* max-height */
+.max-w- .max-h-12 {
+  max-height: 12px;
+}
+
+/* color */
+.text-lightblue {
+  color: rgb(57, 199, 247);
+}
+
+.text-lightgreen {
+  color: rgb(85, 182, 85);
+}
+
+table td.text-lightgreen {
+  color: rgb(85, 182, 85);
+}
+
+/* hover */
+.text-lightblue:hover {
+  color: rgb(0, 148, 197);
+}
+
+.nav-btn:hover,
+.nav-btn:active,
+.nav-btn.active {
+  border-bottom: 3px solid rgb(85, 182, 85);
+}
+
+/* background */
+.hero-bg {
+  background-image: url(./imges/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slogan-bg {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.form-bg {
+  background: linear-gradient(180deg, green 50%, rgb(1, 173, 1));
+}
+
+.lightgreen-bg {
+  background: rgb(131, 187, 131);
+}
+
+.lightgreen-bg:hover {
+  background: rgb(146, 204, 146);
+}
+
+/* shadow */
+.box-shadow {
+  box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.2);
+}
+
+/* border */
+thead tr {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
